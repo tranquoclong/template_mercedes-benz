@@ -1,0 +1,19 @@
+.information {
+    margin: 35px;
+    .info{
+        clear: both;
+        color: white;
+        font-size: 14px;
+        padding:40px;
+        padding-top: 113px;
+        .info__content{
+            padding-bottom: 20px;
+            span{
+                padding-right: 30px;
+                i{
+                    padding-right:5px
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.searchBar {
+    .searchBar__cover {
+        background: $color--gray-light;
+        height: 100px;
+        .searchBar__search {
+            .search-input {
+                position: relative;
+                padding: 30px 80px;
+                #searchBar {
+                    border-radius: none!important;
+                    &::placeholder {
+                        color: rgba(108, 117, 125, 0.5);
+                        font-weight: $fw-bold-0;
+                        letter-spacing: 1px;
+                        font-family: serif;
+                    }
+                }
+                .searchIcon {
+                    position: absolute;
+                    right: 80px;
+                    top: 30px;
+                    color: black;
+                    padding: 7px 30px;
+                    a {
+                        color: #333333;
+                    }
+                    &:hover a {
+                        color: $color--gray;
+                    }
+                }
+            }
+        }
+    }
+    .searchBar__content {
+        padding: 30px 76px;
+        font-weight: $fw-bold-1;
+        margin: 100px 0;
+        .contentCover {
+            width: 70%;
+            a:focus{
+                box-shadow: none!important;
+            }
+        }
+        .btn-local {
+            margin-top: 40px;
+            background: $color--cyan;
+            &:hover {
+                background: $color--blue;
+            }
+        }
+        h2 {
+            font-size: $fs-3;
+            padding: 20px 0;
+        }
+        p {
+            font-size: $fs-1;
+        }
+    }
+
+}
+
+// Responsive 
+@media screen and(max-width: 992px) {
+.searchBar {
+    .searchBar__content {
+        margin: 50px 0;
+        .contentCover {
+            width: 100%;
+        }
+    }
+}
+}
+@media screen and(max-width: 768px) {
+.searchBar {
+    .searchBar__search {
+        .search-input {
+            padding: 30px!important;
+            .searchIcon {
+                right: 30px!important;
+            }
+        }
+    }
+    .searchBar__content {
+        padding: 30px;
+        margin: 50px 0;
+        .contentCover {
+            width: 100%;
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
+}

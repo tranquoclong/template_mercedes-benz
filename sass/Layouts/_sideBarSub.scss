@@ -1,0 +1,70 @@
+.sideBarSub {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: black;
+    padding: 1px;
+    height: 60px;
+    z-index: 20;
+    .sideBarSub__cover {
+        .sideBarSub__item {
+            margin: 0;
+            .col-3 {
+                padding: 0 1px;
+                align-items: center;
+                .sideBarSub__link {
+                    background: #1f1f1f;
+                    height: 100%;
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    a {
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        i {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .sideBarSub__link-share {
+                    position: relative;
+                    list-style-type: none;
+                    background: #1f1f1f;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    p {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                    .overlay__icon {
+                        position: absolute;
+                        top: -361px;
+                        background: #1f1f1f;
+                        width: 100%;
+                        max-height: 404px;
+                        border-bottom: black 1px solid;
+                        a {
+                            color: white;
+                            display: block;
+                            &:hover {
+                                color: $color--cyan;
+                            }
+                            i {
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}

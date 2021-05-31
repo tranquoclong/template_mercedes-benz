@@ -1,0 +1,55 @@
+.banner {
+    .banner__cover {
+        padding: 0 80px;
+        .banner__content {
+            display: flex;
+            .banner__item {
+                padding: 0 8px;
+                li {
+                    list-style-type: none;
+                    position: relative;
+                    margin: 7px 0;
+                    a {
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                        &::after {
+                            content: ' ';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 0px;
+                            width: 100%;
+                            overflow: hidden;
+                            background: $color--cyan;
+                            z-index: 10;
+                            transition: all 0.2s;
+                        }
+                    }
+                    &:hover ::after {
+                        height: 7px;
+                        z-index: 10;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and(max-width: 768px) {
+    .banner {
+        .banner__cover {
+            padding: 0 45px;
+            .banner__content {
+                .banner__item {
+                    padding: 0 3px!important;
+                    li {
+                        margin: 3px 0!important;
+                    }
+                }
+            }
+        }
+    }
+}

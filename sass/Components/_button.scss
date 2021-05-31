@@ -1,0 +1,14 @@
+element.style {
+    height: 8660px;
+    overflow: hidden;
+}
+.btn__readMore {
+    @include textStyle($color--white, $fs-1, $fw-bold-0);
+    letter-spacing: 1px;
+    padding: $pd-1 $pd-2;
+    background: $color--gray-dark;
+    transition: all 0.5s;
+    &:hover {
+        background: #000;
+    }
+}

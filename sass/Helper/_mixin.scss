@@ -1,0 +1,28 @@
+@mixin responsive($screen){
+    //kiểm tra tên màn hình có tồn tại hay không
+    //câu lệnh điều kiện thêm
+    @if(map-has-key($map:$breakpoints , $key:$screen )){
+        //map-has-key: kiểm tra xem màn hình có tồn tại hay chưa,nếu có tồn tại tì có kq là true, nếu sai thì là false
+        //map: chứa tên biến đang có danh sách màn hình cần lấy
+        //key: tên màn hình cần tìm 
+        //sử lí neus tên màn hình hợp lệ
+        //giả sử cần lấy màn hình medium(768px)
+        //lấy gái trị của màn hình cân tìm dc
+        // chứa giá trị màn hình lấy dc
+        $value:map-get($map:$breakpoints , $key:$screen );
+        //responsive của cs3
+        @media screen and (max-width:$value){
+            @content;
+        }
+
+    }
+    @else{
+        //sử lí khi tên màn hình không hợp lệ
+        @warn "màn hình chưa khai báo";
+    }
+}
+@mixin textStyle($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}

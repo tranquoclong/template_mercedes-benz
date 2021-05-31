@@ -1,0 +1,16 @@
+
+.readMoreFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 30px 0;
+  transform: translateY(-1275px);
+}
+@media screen and (max-width: 1200px){
+  .readMoreFade{
+    transform: translateY(-2910px);
+  }
+}
